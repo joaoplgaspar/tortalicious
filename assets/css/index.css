@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+header {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+header .header-imgTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a04f75;
+  width: 95%;
+  box-shadow: 0px 15px 25px 1px rgba(0, 0, 0, 0.23);
+}
+header .header-imgTitle img {
+  width: 5%;
+}
+header .header-imgTitle h1 {
+  font-family: "Pacifico";
+  font-size: 3.6rem;
+}
+header nav {
+  font-family: "Poppins";
+  width: 60%;
+  font-size: 1.6rem;
+  background: #803659;
+  border-radius: 0 0 50% 50%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 1rem 0;
+  border-top: 1px solid transparent;
+  box-shadow: 0px 15px 25px 1px rgba(0, 0, 0, 0.23);
+}
+header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  transition: 500ms all;
+  font-weight: bold;
+}
+header nav a:hover {
+  color: rgba(117, 255, 18, 0.838);
+}
+
+main {
+  max-width: 1280px;
+  margin: 15rem auto 0;
+  font-family: "Poppins";
+}
+main section {
+  box-shadow: 0px 0px 37px 1px rgba(0, 0, 0, 0.33);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-bottom: 10rem;
+}
+main section .torta-receita {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main section .torta-receita .img-nome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section .torta-receita .img-nome h2 {
+  font-family: "Pacifico";
+  font-size: 2.8rem;
+  position: absolute;
+  z-index: 0;
+  color: #FFF;
+  padding: 1rem;
+  text-shadow: 4px 3px 2px #803659;
+}
+main section .torta-receita .img-nome img {
+  width: 100%;
+}
+main section .torta-receita .ingredientes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+}
+main section .torta-receita .ingredientes p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+main section .torta-receita .ingredientes h3 {
+  font-size: 2.2rem;
+}
+main section .torta-receita .ingredientes ul {
+  padding: 2.2rem 0 0 5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main section .torta-receita .ingredientes ul li {
+  font-size: 1.4rem;
+  text-transform: none;
+  font-weight: normal;
+}
+main section .modo-preparo {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid #a04f75;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main section .modo-preparo h3 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+main section .modo-preparo ul {
+  padding: 2.2rem 0 0 5rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main section .modo-preparo ul li {
+  list-style: decimal;
+  font-size: 1.4rem;
+  text-transform: none;
+  font-weight: normal;
+}/*# sourceMappingURL=index.css.map */
